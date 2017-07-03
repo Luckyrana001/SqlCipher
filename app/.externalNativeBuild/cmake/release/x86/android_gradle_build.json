@@ -1,0 +1,38 @@
+
+{
+	"buildFiles" : [ "/Users/lucky/Downloads/SqlCipher/app/CMakeLists.txt" ],
+	"cleanCommands" : 
+	[
+		"/Users/lucky/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/lucky/Downloads/SqlCipher/app/.externalNativeBuild/cmake/release/x86 --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"native-lib-Release-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "native-lib",
+			"buildCommand" : "/Users/lucky/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/lucky/Downloads/SqlCipher/app/.externalNativeBuild/cmake/release/x86 --target native-lib",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  -target i686-none-linux-android -gcc-toolchain /Users/lucky/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/lucky/Library/Android/sdk/ndk-bundle/platforms/android-15/arch-x86  -Dnative_lib_EXPORTS -isystem /Users/lucky/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/lucky/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86/include -isystem /Users/lucky/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -fno-exceptions -fno-rtti -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -fno-exceptions -fno-rtti  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC    -c ",
+					"src" : "/Users/lucky/Downloads/SqlCipher/app/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "/Users/lucky/Downloads/SqlCipher/app/.externalNativeBuild/cmake/release/x86"
+				}
+			],
+			"output" : "/Users/lucky/Downloads/SqlCipher/app/.externalNativeBuild/cmake/release/obj/x86/libnative-lib.so",
+			"toolchain" : "78279203840558521"
+		}
+	},
+	"toolchains" : 
+	{
+		"78279203840558521" : 
+		{
+			"cCompilerExecutable" : "/Users/lucky/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/Users/lucky/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+		}
+	}
+}

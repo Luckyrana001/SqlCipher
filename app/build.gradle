@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "androidluckyguys.sqlcipher"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+
+        externalNativeBuild {
+            cmake {
+                cppFlags ""
+            }
+        }
+
+
+        ndk {
+            abiFilters 'x86', 'armeabi', 'armeabi-v7a'
+        }
+
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+
+    //Its for data binding.
+    dataBinding {
+        enabled = true
+    }
+
+}
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:23.1.1'
+   /* compile files('libs/sqlcipher.jar')
+    compile files('libs/guava-r09.jar')
+    compile files('libs/commons-codec.jar')*/
+    compile 'com.google.code.gson:gson:2.6.2'
+
+    compile 'net.zetetic:android-database-sqlcipher:3.5.4'
+
+
+}
